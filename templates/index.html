@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for("static", filename="css/base.css")}}">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h3>问卷网站</h3>
+    <form class="pure-form">
+      <div class="question">
+        <label>你喜欢什么颜色？</label>
+        <input type="radio" name="color" value="red">红色
+        <input type="radio" name="color" value="blue">蓝色
+        <input type="radio" name="color" value="green">绿色
+      </div>
+      <div class="question">
+        <label>你喜欢什么运动？</label>
+        <input type="checkbox" name="sport" value="basketball">篮球
+        <input type="checkbox" name="sport" value="football">足球
+        <input type="checkbox" name="sport" value="tennis">网球
+      </div>
+      <input type="submit" value="提交">
+    </form>
+  </div>
+</body>
+</html>
